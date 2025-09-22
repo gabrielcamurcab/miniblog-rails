@@ -1,24 +1,59 @@
-# README
+# MiniBlog Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Um projeto de blog, meu primeiro com Rails, justamente para praticar e entender a estruturação de um projeto Rails, e como codar em Ruby on Rails.
 
-Things you may want to cover:
+## Pré-requisitos
 
-* Ruby version
+- Ruby (versão recomendada: 3.x)
+- Rails (versão recomendada: 7.x)
+- SQLite3 (ou outro banco de dados suportado)
 
-* System dependencies
+## Instalação
 
-* Configuration
+1. Clone o repositório:
+	```bash
+	git clone <url-do-repositorio>
+	cd miniblog-rails
+	```
 
-* Database creation
+2. Instale as dependências:
+	```bash
+	bundle install
+	```
 
-* Database initialization
+3. Configure o banco de dados:
+	```bash
+	rails db:setup
+	```
+	Ou, se preferir, crie e migre manualmente:
+	```bash
+	rails db:create
+	rails db:migrate
+	rails db:seed
+	```
 
-* How to run the test suite
+## Rodando o servidor
 
-* Services (job queues, cache servers, search engines, etc.)
+Para iniciar o servidor localmente:
 
-* Deployment instructions
+```bash
+rails server
+```
 
-* ...
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+## Rodando os testes
+
+Para executar a suíte de testes:
+
+```bash
+rails test
+```
+
+## Estrutura do Projeto
+
+O projeto segue a estrutura padrão de aplicações Rails, com pastas para controllers, models, views, assets, entre outros.
+
+---
+
+Sinta-se à vontade para explorar, modificar e aprender!
