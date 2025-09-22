@@ -12,16 +12,16 @@
   <% end %>
 
   <div>
-    <%= form.label :title, style: "display: block" %>
+    <%= form.label "Título", style: "display: block" %>
     <%= form.text_field :title %>
   </div>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
+    <%= form.label "Descrição", style: "display: block" %>
     <%= form.textarea :description %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Criar post" %>
   </div>
 <% end %>
